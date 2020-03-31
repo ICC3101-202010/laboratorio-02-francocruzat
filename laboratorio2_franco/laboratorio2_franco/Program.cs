@@ -5,10 +5,10 @@ namespace laboratorio2_franco
 {
     class Cancion
     {
-        string Nombre;
-        string Album;
-        string Artista;
-        string Genero;
+        public string Nombre;
+        public string Album;
+        public string Artista;
+        public string Genero;
 
         public Cancion(string genero, string artista, string album, string nombre)
         {
@@ -40,6 +40,7 @@ namespace laboratorio2_franco
             spotify.VerCanciones();
             bool retorno = spotify.AgregarCancion(cancion);
             Console.WriteLine(retorno);
+          
         }
     }
     class Espotifai
@@ -66,6 +67,76 @@ namespace laboratorio2_franco
                 Console.WriteLine(listacanciones[i].Informacion());
             }
         }
+        public List<Cancion> CancionesPorCriterio(String criterio, String valor)
+        {
+            List<Cancion> listaretorno = new List<Cancion>();
+            switch (criterio)
+            {
+                case "nombrecancion":
+                    for (int i = 0; i < listacanciones.Count; ++i)
+                    {
+                        if (valor== listacanciones[i].Nombre)
+                        {
+                           listaretorno.Add(listacanciones[i]);
+                        }
 
+                    }
+                    if (listaretorno.Count == 0)
+                    {
+                        Console.WriteLine("No se encontraron canciones con este nombre");
+                    }
+                    return listaretorno;
+                case "album":
+                    for (int i = 0; i < listacanciones.Count; ++i)
+                    {
+                        if (valor == listacanciones[i].Album)
+                        {
+                            listaretorno.Add(listacanciones[i]);
+                        }
+
+                    }
+                    if (listaretorno.Count==0)
+                    {
+                        Console.WriteLine("No se encontraron canciones con este album");
+                    }
+                    return listaretorno;
+                case "artista":
+                    for (int i = 0; i < listacanciones.Count; ++i)
+                    {
+                        if (valor == listacanciones[i].Artista)
+                        {
+                            listaretorno.Add(listacanciones[i]);
+                        }
+
+                    }
+                    if (listaretorno.Count == 0)
+                    {
+                        Console.WriteLine("No se encontraron canciones con este artista");
+                    }
+                    return listaretorno;
+                case "genero":
+                    for (int i = 0; i < listacanciones.Count; ++i)
+                    {
+                        if (valor == listacanciones[i].Genero)
+                        {
+                            listaretorno.Add(listacanciones[i]);
+                        }
+
+                    }
+                    if (listaretorno.Count == 0)
+                    {
+                        Console.WriteLine("No se encontraron canciones con este genero");
+                    }
+                    return listaretorno;
+                default:
+                    Console.WriteLine("Lo pusiste mal");
+                        return listaretorno;
+
+
+
+
+
+            }
+        }
     }
 }
