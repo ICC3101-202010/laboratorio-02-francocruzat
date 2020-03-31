@@ -1,0 +1,6 @@
+/Users/francocruzat/Desktop/laboratorio-02-francocruzat/laboratorio2_franco/laboratorio2_franco/obj/x86/Debug/laboratorio2_franco.csprojAssemblyReference.cache
+/Users/francocruzat/Desktop/laboratorio-02-francocruzat/laboratorio2_franco/laboratorio2_franco/obj/x86/Debug/laboratorio2_franco.csproj.CoreCompileInputs.cache
+/Users/francocruzat/Desktop/laboratorio-02-francocruzat/laboratorio2_franco/laboratorio2_franco/bin/Debug/laboratorio2_franco.exe
+/Users/francocruzat/Desktop/laboratorio-02-francocruzat/laboratorio2_franco/laboratorio2_franco/bin/Debug/laboratorio2_franco.pdb
+/Users/francocruzat/Desktop/laboratorio-02-francocruzat/laboratorio2_franco/laboratorio2_franco/obj/x86/Debug/laboratorio2_franco.exe
+/Users/francocruzat/Desktop/laboratorio-02-francocruzat/laboratorio2_franco/laboratorio2_franco/obj/x86/Debug/laboratorio2_franco.pdb
